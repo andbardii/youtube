@@ -1,3 +1,5 @@
+# Shortcuts più utilizzati - Corso Visual Studio Code Italiano Lezione 02
+
 Torna Indietro                              CMD + Z
 Copia elemento/riga                         CMD + C                                    
 Incolla elemento/riga                       CMD + V                                    
