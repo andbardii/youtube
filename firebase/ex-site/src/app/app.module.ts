@@ -5,6 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { environment } from 'src/environments/environment';
+
+const app = initializeApp(environment.firebase);
+const analytics = getAnalytics(app);
 
 @NgModule({
   declarations: [
