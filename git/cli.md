@@ -1,5 +1,3 @@
-# Tutti i Comandi da Terminale - Corso Git Italiano Lezione 05
-
 - Configurazione di Git
 
 git config --global user.name "il-tuo-nome"     Configura il nome utente per i commit.
