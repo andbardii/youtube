@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corso HTML</title>
+    <title>Struttura di un Sito Web</title>
     <style>
         * {
             margin: 0;
@@ -11,29 +11,84 @@
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
         }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        nav {
+            background: #444;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+        aside {
+            background: #f4f4f4;
+            padding: 15px;
+            margin-top: 20px;
+        }
     </style>
-    <script>
-        console.log('Hello World! Header');
-    </script>
 </head>
 <body>
-    <!-- Questo è un commento! -->
-    <nav>Navbar</nav>
+    <header>
+        <h1>Il Mio Sito Web</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chi Siamo</a></li>
+            <li><a href="#">Servizi</a></li>
+            <li><a href="#">Contatti</a></li>
+        </ul>
+    </nav>
+    
     <main>
         <section>
-            <h1>Corso HTML</h1>
-            <b>Expedita esse nulla aspernatur saepe ad?</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita esse nulla aspernatur saepe.</p>        
-            <div>
-                <span>Hello 1</span>
-                <span>Hello 2</span>
-            </div>
+            <h2>Benvenuto nel Nostro Sito</h2>
+            <p>Questa è la sezione principale della pagina.</p>
+        </section>
+        
+        <section>
+            <h2>I Nostri Servizi</h2>
+            <p>Elenco dei servizi offerti:</p>
+            <ul>
+                <li>Web Design</li>
+                <li>SEO</li>
+                <li>Marketing Digitale</li>
+            </ul>
         </section>
     </main>
-    <footer>Footer</footer>
-
-    <script>
-        console.log('Hello World! Body');
-    </script>
+    
+    <aside>
+        <h3>News & Aggiornamenti</h3>
+        <p>Ultime notizie dal nostro blog.</p>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2025 Il Mio Sito Web - Tutti i diritti riservati.</p>
+    </footer>
 </body>
 </html>
